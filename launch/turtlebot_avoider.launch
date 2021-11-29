@@ -1,0 +1,13 @@
+<launch>
+<arg name="bag" default="false" />
+<arg name="gazebo" default="true />
+
+<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch" if="$(arg gazebo)"/>
+
+<node pkg="turtlebot_avoider" name="ros_obstacle_avoider" type="ros_obstacle_avoider" />
+
+<node pkg="rosbag" name="rosbag_record" type="record" 
+args="record -o $(find turtlebot_avoider)/results/record_rosbag.bag -a -x '(.*)/camera(.*)' --duration=15" if="$(arg bag)" />
+
+
+</launch> 
