@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# ros_obstacle_avoider
-=======
+
 # ros_obstacle_avoider
 ros_obstacle_avoider is a turtlebot3 based robot capable of avoiding obstacles at a certain predefined distance using laser.
 It does support level 1 and level2 unit testing.
@@ -100,4 +98,4 @@ topics:      /clock                           14990 msgs    : rosgraph_msgs/Cloc
              /scan                               69 msgs    : sensor_msgs/LaserScan                
              /tf                                415 msgs    : tf2_msgs/TFMessage
 ```
->>>>>>> c6f30be0c1410c4988d96f519edd878e01334d0b
+
